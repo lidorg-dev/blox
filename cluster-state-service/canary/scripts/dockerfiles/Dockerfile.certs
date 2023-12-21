@@ -14,7 +14,7 @@
 # This dockerfile generates a cert bundle that can be packaged with the
 # release container to invoke AWS APIs over TLS.
 
-FROM debian:latest
+FROM debian:12
 
 RUN apt-get update &&  \
     apt-get install -y ca-certificates && \
